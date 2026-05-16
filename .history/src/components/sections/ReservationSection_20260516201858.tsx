@@ -119,6 +119,16 @@ export function ReservationSection() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-kaizen-gold/20 to-transparent" />
       <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-kaizen-red/5 rounded-full blur-3xl pointer-events-none" />
 
+      <style>{`
+        .ki { width:100%; background-color:#1c1c1c; border:1px solid rgba(255,255,255,0.10); color:#fff; padding:14px 16px 14px 42px; font-size:0.875rem; outline:none; transition:border-color 0.3s; border-radius:2px; color-scheme:dark; -webkit-appearance:none; appearance:none; }
+        .ki::placeholder { color:rgba(255,255,255,0.30); }
+        .ki:hover { border-color:rgba(255,255,255,0.22); }
+        .ki:focus { border-color:rgba(177,18,38,0.65); }
+        .ki option { background-color:#1c1c1c; color:#fff; }
+        .ki::-webkit-calendar-picker-indicator { filter:invert(1); opacity:0.6; cursor:pointer; }
+        .ksw::after { content:'▾'; position:absolute; right:14px; top:50%; transform:translateY(-50%); color:rgba(255,255,255,0.35); pointer-events:none; font-size:12px; }
+      `}</style>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fadeUp}

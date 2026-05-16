@@ -19,10 +19,6 @@ export const metadata: Metadata = {
     description: "Premium Japanese AYCE Restaurant Experience",
     type: "website",
   },
-  icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
-  },
 };
 
 export default function RootLayout({
